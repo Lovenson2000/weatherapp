@@ -1,0 +1,102 @@
+
+body {
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Roboto Slab', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    height: 90vh;
+    background: white;
+   
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(
+        to right,
+        #050563,
+        #0f0fdd
+
+    );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.container {
+    width: 28rem;
+    height: 24rem;
+    background-color: white;
+    box-shadow: 1rem 1rem 3rem rgba(0, 0, 0, 0.3);
+    display: block;
+    text-align: center;
+    border-radius: 6px;
+    
+}
+
+.middle-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+input[type="text"] {
+    width: 10rem;
+    height: 2rem;
+    border: 2px solid #050563;
+    border-radius: 3px;
+    text-align: center;
+    outline: none;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.btn {
+    width: 8rem;
+    height: 2.4rem;
+    border-style: none;
+    border-radius: 7px;
+    color: white;
+    font-size: .9rem;
+    background-color: #050563;
+    cursor: pointer;
+
+}
+
+@media(max-width:33rem) {
+    .container {
+        width: 22rem;
+    } 
+    .main-heading {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:24rem) {
+    .container {
+        width: 20rem;
+    }
+    input[type="text"] {
+        width: 9rem;
+    }
+
+    .btn {
+        width: 7rem;
+    }
+    .middle-container {
+        gap: 1rem;
+    }
+}
+
