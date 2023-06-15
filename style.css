@@ -91,6 +91,9 @@ p {
     input[type="text"] {
         width: 9rem;
     }
+    body {
+        gap: 3rem;
+    }
 
     .btn {
         width: 7rem;
@@ -98,5 +101,23 @@ p {
     .middle-container {
         gap: 1rem;
     }
+}
+
+@media (max-height: 36rem) {
+    body {
+        gap: 2rem;
+        height: 100vh;
+    }
+    .container {
+        width: 19rem;
+    }
+
+    .main-heading {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    
 }
 
